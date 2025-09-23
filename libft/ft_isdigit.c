@@ -6,11 +6,11 @@
 /*   By: sangarci <sangarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 15:42:47 by sangarci          #+#    #+#             */
-/*   Updated: 2025/09/22 11:31:03 by sangarci         ###   ########.fr       */
+/*   Updated: 2025/09/23 11:42:58 by sangarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

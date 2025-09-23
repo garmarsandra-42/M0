@@ -1,28 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sangarci <sangarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/22 11:35:10 by sangarci          #+#    #+#             */
-/*   Updated: 2025/09/23 11:43:03 by sangarci         ###   ########.fr       */
+/*   Created: 2025/09/23 10:57:33 by sangarci          #+#    #+#             */
+/*   Updated: 2025/09/23 12:03:42 by sangarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+	unsigned char	*ptr;
+	size_t			i;
+
+	ptr = s;
+	i = 0;
+	while (i < n)
+	{
+		ptr[i] = (unsigned char)c;
+		i++;
+	}
+	return (s);
 }
 
-/* int main(void)
+/*int	main(void)
 {
-    int c = 30;
-    int res = ft_isprint(c);
-    printf ("%i\n", res);
-    return (0);
-} */
+	char s[] = "hello world";
+	int c = 't';
+	size_t n = 10;
+	size_t i = 0;
+
+	ft_memset(s, c, n);
+	while (i < 11)
+		printf("%c\n", s[i++]);
+}*/
