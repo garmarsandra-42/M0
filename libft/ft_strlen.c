@@ -6,13 +6,13 @@
 /*   By: sangarci <sangarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/22 11:44:00 by sangarci          #+#    #+#             */
-/*   Updated: 2025/09/23 11:43:07 by sangarci         ###   ########.fr       */
+/*   Updated: 2025/09/24 15:02:25 by sangarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int	i;
 
