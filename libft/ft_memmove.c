@@ -29,9 +29,9 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			i++;
 		}
 	}
-	if (d > s)
+	if (d > s) //Si dest está después de src, copiamos de atrás hacia adelante.
 	{
-		i = 0;
+		i = n;
 		while (i > 0)
 		{
 			d[i -1] = s[i -1];
@@ -39,14 +39,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	}
 	return (dest);
-
-	int main(void)
-	{
-		char src[] = "Sandra";
-		char dest[8];
-		size_t n = 3;
-		ft_memcpy(dest, src, n);
-		printf("%s\n", dest);
-		return (0)
-	}
 }
+
+/* int main(void)
+{
+	char src[] = "12345";
+	char dest[] = "abcde";
+	size_t n = 3;
+	ft_memmove(dest +2, src +2, n);
+	printf("%s\n", dest);
+	return (0);
+} */
